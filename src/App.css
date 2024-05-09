@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+/* in index.css or App.css */
+p {
+  margin: 0;
+  padding: 0;
+}
+

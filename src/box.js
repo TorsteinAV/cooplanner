@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const StyledBox = styled.div`
   height: 325px;
-  background-color: #f0f0f0;
+  background-color: #dbdbdb;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   text-align: center;
@@ -17,14 +17,14 @@ const StyledBox = styled.div`
 // Props are passed to the Box component for flexibility
 const Box1 = ({ onClick, imgSrc, line1, line2 }) => (
   <StyledBox onClick={onClick}>
-    <img src={imgSrc} alt="Content" style={{ width: '100%', height: 'auto' }} />
+    <img src={imgSrc} alt="Content" style={{ width: '100%', height: '80%' }} />
     <div>{line1}</div>
     <div>{line2}</div>
   </StyledBox>
 );
 const Box2 = ({ onClick, imgSrc, line1, line2 }) => (
     <StyledBox onClick={onClick}>
-      <img src={imgSrc} alt="Content" style={{ width: '100%', height: 'auto' }} />
+      <img src={imgSrc} alt="Content" style={{ width: '100%', height: '80%' }} />
       <div>{line1}</div>
       <div>{line2}</div>
     </StyledBox>
@@ -80,7 +80,7 @@ const Box2 = ({ onClick, imgSrc, line1, line2 }) => (
   );
   const Box10 = ({ onClick, imgSrc, line1, line2 }) => (
     <StyledBox onClick={onClick}>
-      <img src={imgSrc} alt="Content" style={{ width: '100%', height: 'auto' }} />
+      <img src={imgSrc} alt="Content" style={{ width: '100%', height: '6000' }} />
       <div>{line1}</div>
       <div>{line2}</div>
     </StyledBox>
@@ -123,4 +123,6 @@ const Box2 = ({ onClick, imgSrc, line1, line2 }) => (
                          
 
 
-export default Box1;
+
+export default Box2;
+

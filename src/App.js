@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './App.css';
 import Box1 from './box';
 import Box2 from './box';
 import Box3 from './box';
@@ -17,8 +18,8 @@ import Box13 from './box';
 import Box14 from './box';
 import Box15 from './box';
 
-import image1 from './assets/images/image1.jpg'; // Import the image
-import image2 from './assets/images/image2.jpg'; // Import another image
+import image1 from './assets/images/image1.jpg'; 
+import image2 from './assets/images/image2.jpg'; 
 import image3 from './assets/images/image3.jpg';
 import image4 from './assets/images/image4.jpg';
 import image5 from './assets/images/image5.jpg';
@@ -127,32 +128,30 @@ function App() {
       </Banner>
       <Container>
         <Content>
-          <Box1 imgSrc={image1} line1="Blomkålsuppe" onClick={() => handleBoxClick(1)} />
-          <Box2 imgSrc={image2} line1="Fiskegrateng" onClick={() => handleBoxClick(2)} />
-          <Box3 imgSrc={image3} line1="Kjøttkaker i brunsaus" onClick={() => handleBoxClick(2)} />
-          <Box4 imgSrc={image4} line1="Kremet greesskarsuppe" onClick={() => handleBoxClick(2)} />
-          <Box5 imgSrc={image5} line1="Kyllingburger" onClick={() => handleBoxClick(2)} />
-          {/* Add more boxes as needed */}
+          <Box1 imgSrc={image1} line1="Blomkålsuppe" line2="Estimert tid under 20min" onClick={() => handleBoxClick(1)} />
+          <Box2 imgSrc={image2} line1="Fiskegrateng" line2="Estimert tid 50min" onClick={() => handleBoxClick(2)} />
+          <Box3 imgSrc={image3} line1="Kjøttkaker i brunsaus" line2="Estimert tid 45min" onClick={() => handleBoxClick(3)} />
+          <Box4 imgSrc={image4} line1="Kremet greesskarsuppe" line2="Estimert tid 35min" onClick={() => handleBoxClick(4)} />
+          <Box5 imgSrc={image5} line1="Kyllingburger" line2="Estimert tid 25min" onClick={() => handleBoxClick(5)} />
         </Content>
-        
+        <p>
         <Content>
-          <Box6 imgSrc={image6} line1="Lettvint chili con carne" line2="Box 1 Line 2" onClick={() => handleBoxClick(1)} />
-          <Box7 imgSrc={image7} line1="Norsk laks med poteter" line2="Box 2 Line 2" onClick={() => handleBoxClick(2)} />
-          <Box8 imgSrc={image8} line1="Stekte nudler med grønnsaker" line2="Box 2 Line 2" onClick={() => handleBoxClick(2)} />
-          <Box9 imgSrc={image9} line1="Quesedilla" line2="Box 2 Line 2" onClick={() => handleBoxClick(2)} />
-          <Box10 imgSrc={image10} line1="Omelett med grønn salat" line2="Box 2 Line 2" onClick={() => handleBoxClick(2)} />
-          {/* Add more boxes as needed */}
+          <Box6 imgSrc={image6} line1="Lettvint chili con carne" line2="Estimert tid 30min" onClick={() => handleBoxClick(6)} />
+          <Box7 imgSrc={image7} line1="Norsk laks med poteter" line2="Estimert tid 30min" onClick={() => handleBoxClick(7)} />
+          <Box8 imgSrc={image8} line1="Stekte nudler med grønnsaker" line2="Estimert tid 20min" onClick={() => handleBoxClick(8)} />
+          <Box9 imgSrc={image9} line1="Quesedilla" line2="Estimert tid 15min" onClick={() => handleBoxClick(9)} />
+          <Box10 imgSrc={image10} line1="Omelett med grønn salat" line2="Estimert tid 15min" onClick={() => handleBoxClick(10)} />
         </Content>
-        
+        </p>
+        <p>
         <Content>
-          <Box11 imgSrc={image11} line1="Pasta bolognese" line2="Box 1 Line 2" onClick={() => handleBoxClick(1)} />
-          <Box12 imgSrc={image12} line1="Pasta carbonara" line2="Box 2 Line 2" onClick={() => handleBoxClick(2)} />
-          <Box13 imgSrc={image13} line1="Pasta med tomatsaus" line2="Box 2 Line 2" onClick={() => handleBoxClick(2)} />
-          <Box14 imgSrc={image14} line1="Vegansk chilli con carne" line2="Box 2 Line 2" onClick={() => handleBoxClick(2)} />
-          <Box15 imgSrc={image15} line1="Vegetartaco med linser og bønner" line2="Box 2 Line 2" onClick={() => handleBoxClick(2)} />
-          {/* Add more boxes as needed */}
+          <Box11 imgSrc={image11} line1="Pasta bolognese" line2="Estimert tid 35min" onClick={() => handleBoxClick(11)} />
+          <Box12 imgSrc={image12} line1="Pasta carbonara" line2="Estimert tid 35min" onClick={() => handleBoxClick(12)} />
+          <Box13 imgSrc={image13} line1="Pasta med tomatsaus" line2="Estimert tid 20min" onClick={() => handleBoxClick(13)} />
+          <Box14 imgSrc={image14} line1="Vegansk chilli con carne" line2="Estimert tid 60min" onClick={() => handleBoxClick(14)} />
+          <Box15 imgSrc={image15} line1="Vegetartaco med linser og bønner" line2="Estimert tid 20min" onClick={() => handleBoxClick(15)} />
         </Content>
-        
+        </p>
       </Container>
       <BottomBar>
         <Link to="/minmeny"><button>Lag meny</button></Link>
